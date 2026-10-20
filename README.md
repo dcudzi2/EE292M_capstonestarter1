@@ -1,12 +1,7 @@
 # EE292M_3a_HWcapstone plan
 
 Why this is worth doing:
-I-V curve analysis is crucial for determining LED characteristics. This data extraction could be done manually but is cumbersome and time consuming for me. It must be done faster so that I can gain insights on my devices sooner. It's also time consuming for me to generate graphics that describe the LED structure, and PowerPoint cannot nicely maintain pixel-perfect arrangements of rectangles.
-
-Milestones (stack visualizer):
-1) Basic LED material stack visualization in top segment that allows tunable n-GaN thickness, p-GaN thickness, and quantum well thickness. Textboxes to allow for changes to the names of these layers. Thickness labeling at the side of the diagram, 
-2) Allow for more quantum wells, allow for barrier layers between quantum wells in the visualization with tunable barrier thickness.
-3) Allow for custom layers to be added beyond the ones listed above, each with their own labels. Implementation of arrows to change relative positioning of these layers.
+I-V curve analysis is crucial for determining LED characteristics. This data extraction could be done manually but is cumbersome and time consuming for me. It must be done faster so that I can gain insights on my devices sooner.
 
 Milestones (I-V curve handler):
 1) Button that allows a dialog to appear for someone to submit a folder to the backend
@@ -21,10 +16,7 @@ Milestones (I-V curve handler):
 10) Highlighting of threshold voltage on the I-V curves (linear and logarithmic) using a dedicated, additional point on the graph.
 
 Top risks:
-Automatic identification of tags in .csv filenames may be problematic, especially if a filename contains extra information unique to just one device (defective, unique/unseen behavior, other marker).
+Automatic identification of tags in .csv filenames may be problematic, especially if a filename contains extra information unique to just one device (defective, unique/unseen behavior, other marker). Consider a separate dialog where I can look at all the filenames in one place and then manually specify my own file tags.
 
 Frontend vs. backend:
-I'm not sure what you mean by this. Backend should handle all ideality factor extraction and threshold voltage extraction. Frontend handles visualization and feeds the input file folder to the backend.
-
-What would break if it were drawn one function earlier:
-No clue what this means.
+Backend should handle all ideality factor extraction and threshold voltage extraction. Frontend handles visualization and feeds the input file folder to the backend. Frontend is where the user submits the folder location for all the CSV files, and the backend 
